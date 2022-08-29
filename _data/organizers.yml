@@ -1,0 +1,33 @@
+- num_row: 0
+  organizers:    
+    - name: Jimmy Lin
+      affiliation: University of Waterloo
+      photo: Jimmy.png
+    - name: Mehdi Rezagholizadeh
+      affiliation: Huawei Noah's Ark Lab
+      photo: Mehdi.png
+    - name: Qun Liu
+      affiliation: Huawei Noah's Ark Lab
+      photo: Qun.png
+- num_row: 1
+  organizers:
+    - name: Xinyu Crystina Zhang
+      affiliation: University of Waterloo
+      photo: Crystina.png
+    - name: Nandan Thakur
+      affiliation: University of Waterloo
+      photo: Nandan.png
+    - name: Odunayo Ogundepo
+      affiliation: University of Waterloo
+      photo: Odunayo.png
+- num_row: 2
+  organizers:
+    - name: David Alfonso-Hermelo
+      affiliation: Huawei Noah's Ark Lab
+      photo: David.png
+    - name: Ehsan Kamalloo
+      affiliation: Huawei Noah's Ark Lab
+      photo: Ehsan.png
+    - name: Xiaoguang Li
+      affiliation: Huawei Noah's Ark Lab
+      photo: Xiaoguang.png

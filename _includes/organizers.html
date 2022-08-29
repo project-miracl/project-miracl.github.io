@@ -1,0 +1,44 @@
+{% assign rows = site.data.organizers %}
+{% for row in rows %}
+	{% assign c = 1 %}
+	<div class="row_perso">
+	{% assign mod = row.organizers.size | modulo:2 == 0 %}
+	{% if mod == 0 %}
+		{% for organizer in row.organizers %}
+			<div class="card_perso column_perso">
+			  <img src="/images/{{ organizer.photo }}" alt="{{ organizer.name }}" class="img_card_perso">
+			  <div class="container_perso" >
+				<center>
+				<h6>
+					<b>{{ organizer.name }}</b>
+					<br>
+					{{ organizer.affiliation }}
+				</h6>
+				</center>
+			  </div>
+			</div>
+		{% endfor %}
+	{% else %}
+		{% for organizer in row.organizers %}
+			{% if c == 1 %}
+			{% assign style_val = "style='margin-left:13%;'" %}
+			{% else %}
+			{% assign style_val = '' %}
+			{% endif %}
+			<div class="card_perso column_perso" {{ style_val }}>
+			  <img src="/images/{{ organizer.photo }}" alt="{{ organizer.name }}" class="img_card_perso">
+			  <div class="container_perso" >
+				<center>
+				<h6>
+					<b>{{ organizer.name }}</b>
+					<br>
+					{{ organizer.affiliation }}
+				</h6>
+				</center>
+			  </div>
+			</div>
+			{% assign c = 2 %}
+		{% endfor %}
+	{% endif %}
+	</div>
+{% endfor %}

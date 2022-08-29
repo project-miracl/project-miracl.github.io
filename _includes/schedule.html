@@ -1,0 +1,64 @@
+{% assign schedule = site.data.schedule %}
+{% assign size = schedule.size %}
+{% if size == False %}
+TBD
+{% else %}
+	{% for event in schedule %}
+		{% if event.Abstract %}
+			<div class="modal fade" id="talk_{{ forloop.index }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-body">
+							<b>Title:</b> {{ event.Title }}
+							<br>
+							<b>Presenter:</b> {{ event.Presenter }}
+							<br>
+							{% if event.Is_paper == false %}
+								<b>Bio</b><p class="par_panel_perso">{{ event.Bio }} </p>
+							{% else %}
+								<b>Authors</b><p class="par_panel_perso">{{ event.Authors }} </p>
+							{% endif %}
+							<b>Abstract</b><p class="par_panel_perso">{{ event.Abstract }} </p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		{% endif %}
+	{% endfor %}
+	<div class="row">
+		<table id="customers">
+			<tr>
+				<th>Time</th>
+				<th colspan="2">Title</th>
+				<th>Presenter</th>
+			</tr>
+			{% for event in schedule %}
+				<tr>
+					<td>{{ event.Time }}</td>
+					
+					{% if event.Whole_line == true%}
+						<td colspan='3'>{{ event.Title }}</td>
+					{% else %}
+						{% if event.Abstract %}
+							<td>{{ event.Title }}</td>
+							<td>
+								<center>
+									<a href="" data-bs-toggle="modal" data-bs-target="#talk_{{ forloop.index }}">
+										<i class="bi bi-info-circle" style="font-size: 1.4rem;"></i>
+									</a>
+								</center>
+							</td>
+						{% else %}
+							<td colspan='2'>{{ event.Title }}</td>
+						{% endif %}
+						<td>{{ event.Presenter }}</td>
+					{% endif %}
+				</tr>
+			{% endfor %}
+			<!-- -->
+		</table>
+	</div>
+{% endif %}

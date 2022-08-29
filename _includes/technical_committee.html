@@ -1,0 +1,28 @@
+{% assign tc_members = site.data.technical_committee %}
+{% if tc_members == false %}
+<p>TBD</p>
+{% else %}
+{% assign half_size = tc_members.size | divided_by: 2 %}
+<table>
+	<tr>
+		<td>
+			<ul>
+				{% for member in tc_members %}
+					{% if forloop.index0 <= half_size %}
+						<li> {{ member }} </li>
+					{% endif %}
+				{% endfor %}
+			</ul>
+		</td>
+		<td>
+			<ul>
+				{% for member in tc_members %}
+					{% if forloop.index0 > half_size %}
+						<li> {{ member }} </li>
+					{% endif %}
+				{% endfor %}
+			</ul>
+		</td>
+	</tr>
+</table>
+{% endif %}

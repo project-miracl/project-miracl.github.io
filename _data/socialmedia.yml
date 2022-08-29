@@ -1,0 +1,23 @@
+email:
+  id: 'project.miracl@gmail.com'
+  href: 'mailto:'
+  title: 'Email'
+  fa-icon: 'fa-envelope-square'
+
+website:
+  id: ''
+  href: 'http://miracl.ai/'
+  title: 'Website'
+  fa-icon: 'fa-firefox'
+
+twitter:
+  id: 'project-miracl'
+  href: 'https://www.twitter.com/'
+  title: 'Twitter'
+  fa-icon: 'fa-twitter'
+
+github:
+  id: 'project-miracl'
+  href: 'https://github.com/'
+  title: 'GitHub'
+  fa-icon: 'fa-github-alt'

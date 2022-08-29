@@ -1,0 +1,44 @@
+{% assign rows = site.data.speakers %}
+{% for row in rows %}
+	{% assign c = 1 %}
+	<div class="row_perso">
+	{% assign mod = row.speakers.size | modulo:2 == 0 %}
+	{% if mod == 0 %}
+		{% for speaker in row.speakers %}
+			<div class="card_perso column_perso">
+			  <img src="/images/{{ speaker.photo }}" alt="{{ speaker.name }}" class="img_card_perso">
+			  <div class="container_perso">
+				<center>
+				<h6>
+					<b>{{ speaker.title }}<br>{{ speaker.name }}</b>
+					<br>
+					{{ speaker.affiliation }}
+				</h6>
+				</center>
+			  </div>
+			</div>
+		{% endfor %}
+	{% else %}
+		{% for speaker in row.speakers %}
+			{% if c == 1 %}
+			{% assign style_val = "style='margin-left:13%;'" %}
+			{% else %}
+			{% assign style_val = '' %}
+			{% endif %}
+			<div class="card_perso column_perso" {{ style_val }}>
+			  <img src="/images/{{ speaker.photo }}" alt="{{ speaker.name }}" class="img_card_perso">
+			  <div class="container_perso">
+				<center>
+				<h6>
+					<b>{{ speaker.title }}<br>{{ speaker.name }}</b>
+					<br>
+					{{ speaker.affiliation }}
+				</h6>
+				</center>
+			  </div>
+			</div>
+			{% assign c = 2 %}
+		{% endfor %}
+	{% endif %}
+	</div>
+{% endfor %}
