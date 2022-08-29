@@ -1,0 +1,161 @@
+r0:
+  bold: 'true'
+  lang: 'Lang'
+  q: 'Queries'
+  j: 'Judgments'
+  pr: 'Positive Relevance'
+  avg: 'Avg Positive Relevance'
+  size: 'Collection Size'
+
+r1:
+  lang: 'Arabic (ar)'
+  q: '7K'
+  j: '75K'
+  pr: '14K'
+  avg: '1.88'
+  size: '2M'
+
+r2:
+  lang: 'English (en)'
+  q: '307'
+  j: '3K'
+  pr: '758'
+  avg: '2.47'
+  size: '32K'
+
+r3:
+  lang: 'Spanish (es)'
+  q: '1K'
+  j: '16K'
+  pr: '7K'
+  avg: '4.72'
+  size: '10M'
+
+r4:
+  lang: 'Farsi (fa)'
+  q: '3K'
+  j: '34K'
+  pr: '7K'
+  avg: '2.09'
+  size: '2M'
+
+r5:
+  lang: 'Hindi (hi)'
+  q: '2K'
+  j: '22K'
+  pr: '4K'
+  avg: '2.02'
+  size: '506K'
+
+r6:
+  lang: 'Indonesian (id)'
+  q: '5K'
+  j: '50K'
+  pr: '15K'
+  avg: '3.00'
+  size: '479K'
+
+r7:
+  lang: 'Japanese (ja)'
+  q: '4K'
+  j: '44K'
+  pr: '9K'
+  avg: '2.05'
+  size: '6M'
+
+r8:
+  lang: 'Korean (ko)'
+  q: '1K'
+  j: '13K'
+  pr: '2K'
+  avg: '1.99'
+  size: '1M'
+
+r9:
+  lang: 'Russian (ru)'
+  q: '5K'
+  j: '50K'
+  pr: '13K'
+  avg: '2.64'
+  size: '9M'
+
+r10:
+  lang: 'Swahili (sw)'
+  q: '1K'
+  j: '12K'
+  pr: '2K'
+  avg: '1.77'
+  size: '131K'
+
+r11:
+  lang: 'Telugu (te)'
+  q: '667'
+  j: '13K'
+  pr: '819'
+  avg: '1.23'
+  size: '518K'
+
+r12:
+  lang: 'Thai (th)'
+  q: '3K'
+  j: '31K'
+  pr: '5K'
+  avg: '1.75'
+  size: '542K'
+
+r13:
+  lang: 'Chinese (zh)'
+  q: '2K'
+  j: '26K'
+  pr: '6K'
+  avg: '2.44'
+  size: '4M'
+
+r14:
+  lang: 'TBA (Suprise)'
+  q: '1K'
+  j: '12K'
+  pr: '2K'
+  avg: '2.14'
+  size: '297K'
+
+r15:
+  lang: 'TBA (Suprise)'
+  q: '90'
+  j: '891'
+  pr: '169'
+  avg: '1.88'
+  size: '15M'
+
+r16:
+  lang: 'TBA (Suprise)'
+  q: '2K'
+  j: '19K'
+  pr: '4K'
+  avg: '2.00'
+  size: '1M'
+
+r17:
+  lang: 'TBA (Suprise)'
+  q: '138'
+  j: '1K'
+  pr: '447'
+  avg: '3.24'
+  size: '14K'
+
+r18:
+  lang: 'TBA (Suprise)'
+  q: '407'
+  j: '4K'
+  pr: '466'
+  avg: '1.14'
+  size: '49K'
+
+r19:
+  bold: 'true'
+  lang: 'Total'
+  q: '42K'
+  j: '434K'
+  pr: '97K'
+  avg: '-'
+  size: '105M'
