@@ -111,45 +111,53 @@ r13:
   avg: '2.44'
   size: '4M'
 
-r14:
-  lang: 'TBA (Suprise)'
-  q: '1K'
-  j: '12K'
-  pr: '2K'
-  avg: '2.14'
-  size: '297K'
+# r00:
+#   lang: 'Surprise language'
+#   q: '-'
+#   j: '-'
+#   pr: '-'
+#   avg: '-'
+#   size: '-'
 
-r15:
-  lang: 'TBA (Suprise)'
-  q: '90'
-  j: '891'
-  pr: '169'
-  avg: '1.88'
-  size: '15M'
+# r14:
+#   lang: 'Swahili (sw)'
+#   q: '1K'
+#   j: '12K'
+#   pr: '2K'
+#   avg: '2.14'
+#   size: '131K'
 
-r16:
-  lang: 'TBA (Suprise)'
-  q: '2K'
-  j: '19K'
-  pr: '4K'
-  avg: '2.00'
-  size: '1M'
+# r15:
+#   lang: 'German (de)'
+#   q: '90'
+#   j: '891'
+#   pr: '169'
+#   avg: '1.88'
+#   size: '15M'
 
-r17:
-  lang: 'TBA (Suprise)'
-  q: '138'
-  j: '1K'
-  pr: '447'
-  avg: '3.24'
-  size: '14K'
+# r16:
+#   lang: 'Finnish (fi)'
+#   q: '2K'
+#   j: '19K'
+#   pr: '4K'
+#   avg: '2.00'
+#   size: '1M'
 
-r18:
-  lang: 'TBA (Suprise)'
-  q: '407'
-  j: '4K'
-  pr: '466'
-  avg: '1.14'
-  size: '49K'
+# r17:
+#   lang: 'French (Fr)'
+#   q: '138'
+#   j: '1K'
+#   pr: '447'
+#   avg: '3.24'
+#   size: '14K'
+
+# r18:
+#   lang: 'Yoruba (yo)'
+#   q: '407'
+#   j: '4K'
+#   pr: '466'
+#   avg: '1.14'
+#   size: '49K'
 
 r19:
   bold: 'true'
