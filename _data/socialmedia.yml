@@ -10,9 +10,15 @@ website:
   title: 'Website'
   fa-icon: 'fa-firefox'
 
+huggingface:
+  id: 'project-miracl'
+  href: 'https://huggingface.co/miracl'
+  title: 'HuggingFace'
+  fa-icon: 'fa-smile-o'
+
 twitter:
   id: 'project-miracl'
-  href: 'https://www.twitter.com/'
+  href: 'https://www.twitter.com/project-miracl'
   title: 'Twitter'
   fa-icon: 'fa-twitter'
 
@@ -21,3 +27,5 @@ github:
   href: 'https://github.com/'
   title: 'GitHub'
   fa-icon: 'fa-github-alt'
+
+  
