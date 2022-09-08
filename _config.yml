@@ -22,7 +22,7 @@ title: 🙌 MIRACL
 author:
   email: project.miracl@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Site for the 🙌 MIRACL challenge: the largest balanced information retrieval and dense retrieval task with over 18 human-annotated languages for monolingual and crosslingual tasks.
+  Large balanced multilingual benchmark for IR and DR tasks.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://miracl.ai/" # the base hostname & protocol for your site, e.g. http://example.com
 
