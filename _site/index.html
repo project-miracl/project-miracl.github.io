@@ -10,12 +10,12 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
   <meta name="keywords" content="ENLSP 2022, ENLSP II, enlsp ii, NLP, KD, knowledge distillation, workshop, natural language processing, deep learning, machine learning, neurips workshop 2022, ENLSP,model compression,Efficient Natural Language and Speech Processing,tinyML, BERT, tinyBERT, roberta, distilRoberta, distilBERT, knowledge transfer, efficient knowledge transfer,speech, pre-trained language models, language models, GPT, GPT compression, optimization, speech processing, speech optimization, Multi-domain training, fast pre-training, multimodal, Efficient Training, Data Efficiency, Edge Intelligence, zero-shot learning, few-shot learning, data augumentation, NEURIPS, neurips 2022, NIPS, ENLSP">
   <meta name="google-site-verification" content="2FYQh4GH2FAIelCcPu2MkMhMqFo76u69G5uxcopfuC8" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>🙌 MIRACL | Site for the 🙌 MIRACL competition: the largest balanced information retrieval and dense retrieval task with over 18 human-annotated languages for monolingual and crosslingual tasks.</title>
+<title>🙌 MIRACL | Large balanced multilingual benchmark for IR and DR tasks.</title>
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="🙌 MIRACL" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Site for the 🙌 MIRACL competition: the largest balanced information retrieval and dense retrieval task with over 18 human-annotated languages for monolingual and crosslingual tasks." />
-<meta property="og:description" content="Site for the 🙌 MIRACL competition: the largest balanced information retrieval and dense retrieval task with over 18 human-annotated languages for monolingual and crosslingual tasks." />
+<meta name="description" content="Large balanced multilingual benchmark for IR and DR tasks." />
+<meta property="og:description" content="Large balanced multilingual benchmark for IR and DR tasks." />
 <link rel="canonical" href="http://localhost:4000/" />
 <meta property="og:url" content="http://localhost:4000/" />
 <meta property="og:site_name" content="🙌 MIRACL" />
@@ -23,7 +23,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="🙌 MIRACL" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"Site for the 🙌 MIRACL competition: the largest balanced information retrieval and dense retrieval task with over 18 human-annotated languages for monolingual and crosslingual tasks.","headline":"🙌 MIRACL","name":"🙌 MIRACL","url":"http://localhost:4000/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","description":"Large balanced multilingual benchmark for IR and DR tasks.","headline":"🙌 MIRACL","name":"🙌 MIRACL","url":"http://localhost:4000/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="🙌 MIRACL" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -336,19 +336,73 @@ We propose two tracks for our challenge: <ol>
 For both tracks, participants are allowed to use any publicly available training data that does not contain the information from our development and test set. However, we expect to details on the nature of each training data.
 </p>
 <p><br /></p>
+<h3 class="blackpar_title" id="schedule">Schedule</h3>
+<table>
+  
+          
+              
+              
+                <tr>
+                  <th><b>Date</b></th>
+                  <th><b>Event</b></th>
+                </tr>
+              
+          
+              
+              
+                <tr>
+                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">Wed. Oct 19, 2022</th>
+                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">Data release for “known” languages</th>
+                </tr>
+              
+          
+              
+              
+                <tr>
+                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">Wed. Nov 1, 2022</th>
+                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">Leaderboard open</th>
+                </tr>
+              
+          
+              
+              
+                <tr>
+                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">Wed. Jan 18, 2023</th>
+                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">Data release for “surprise” languages</th>
+                </tr>
+              
+          
+              
+              
+                <tr>
+                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">Wed. Jan 25, 2023</th>
+                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">Final submission deadline</th>
+                </tr>
+              
+          
+              
+              
+                <tr>
+                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">Wed. Feb 1, 2023</th>
+                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">Final winners announced</th>
+                </tr>
+              
+          
+</table>
+<p><br /></p>
 <h3 class="blackpar_title" id="evaluation">Evaluation</h3>
 <p>
-We evaluate the models presented in the challenge based on a combination of average retrieval accuracy across the test datasets for all languages and efficiency measured using model-size (i.e. complexity) and retrieval latency, similar to DynaBench (Kiela et al., 2021), where we provide an importance weight and finally provide a cumulative score. The validation set will be released so that the participants could reasonably evaluate their systems, but the overall test set will be kept confidential.
+We evaluate the models presented in the challenge based on a combination of average retrieval accuracy across the test datasets for all languages and efficiency measured using model-size (i.e. complexity) and retrieval latency, similar to <a href="https://arxiv.org/abs/2104.14337">DynaBench (Kiela et al., 2021)</a>, where we provide an importance weight and finally provide a cumulative score. The validation set will be released so that the participants could reasonably evaluate their systems, but the overall test set will be kept confidential.
 </p>
 <p>
 <b>Effectiveness Evaluation:</b>
-We ask the participants to provide us a TREC runfile containing the top-k judgements. We will evaluate top k=10 retrieved passages for each query, consistent with prior challenges such as TREC-DL (Craswell et al., 2020) or NeuCLIR (https://neuclir.github.io/). Once the challenge ends, we would run an automatic evaluation for the submitted TREC runfiles in the backend on our server on the hidden test queries and evaluate each participants model performance using nDCG@10 and rank-biased precision (RBP).
+We ask the participants to provide us a TREC run-file containing the top-k judgements. We will evaluate top k=10 retrieved passages for each query, consistent with prior challenges such as <a href="https://dl.acm.org/doi/abs/10.1145/3404835.3463249"> TREC-DL (Craswell et al., 2020)</a> or <a href="https://neuclir.github.io/">NeuCLIR</a>. Once the challenge ends, we would run an automatic evaluation for the submitted TREC run-files in the backend on our server on the hidden test queries and evaluate each participants model performance using nDCG@10 and rank-biased precision (RBP).
 </p>
 <p>
-<b>Efficiency Evaluation:</b> Participants would be required to open-source their final model implementations on HuggingFace hub (https://huggingface.co/), a popular open-source platform for publicly hosting models. From the submitted model URL and brief report, we would estimate model complexity and index size. At inference, for a fair comparison of retrieval latency, each participant team would be required to provide easy and intuitive APIs to help us benchmark latencies using exact and exhaustive search similar to BEIR (Thakur et al., 2021). 
+<b>Efficiency Evaluation:</b> Participants would be required to open-source their final model implementations on <a href="https://huggingface.co/">HuggingFace hub</a>, a popular open-source platform for publicly hosting models. From the submitted model URL and brief report, we would estimate model complexity and index size. At inference, for a fair comparison of retrieval latency, each participant team would be required to provide easy and intuitive APIs to help us benchmark latencies using exact and exhaustive search similar to <a href="https://arxiv.org/abs/2104.08663">BEIR (Thakur et al., 2021)</a>. 
 </p>
 <p>
-We can precisely estimate how fast or slow a system is at inference is in comparison to our baselines.
+We can precisely estimate how fast or slow a system is at inference in comparison to our baselines.
 </p>
 <h2 class="blackpar_title" id="organizers">Organizers</h2>
 <div class="row_perso">
@@ -556,7 +610,7 @@ We can precisely estimate how fast or slow a system is at inference is in compar
         </ul>
       </div>
       <div class="footer-col">
-        <p>Site for the 🙌 MIRACL competition: the largest balanced information retrieval and dense retrieval task with over 18 human-annotated languages for monolingual and crosslingual tasks.</p>
+        <p>Large balanced multilingual benchmark for IR and DR tasks.</p>
       </div>
     </div>
 

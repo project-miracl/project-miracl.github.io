@@ -70,19 +70,38 @@ We propose two tracks for our challenge: <ol>
 For both tracks, participants are allowed to use any publicly available training data that does not contain the information from our development and test set. However, we expect to details on the nature of each training data.
 </p>
 <br>
+<h3 class="blackpar_title" id="schedule">Schedule</h3>
+<table>
+  {% assign st = site.data.schedule %}
+          {% for entry in st %}
+              {% assign key = entry | first %}
+              {% if st[key].bold %}
+                <tr>
+                  <th><b>{{ st[key].date }}</b></th>
+                  <th><b>{{ st[key].event }}</b></th>
+                </tr>
+              {% else %}
+                <tr>
+                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">{{ st[key].date }}</th>
+                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">{{ st[key].event }}</th>
+                </tr>
+              {% endif %}
+          {% endfor %}
+</table>
+<br>
 <h3 class="blackpar_title" id="evaluation">Evaluation</h3>
 <p>
-We evaluate the models presented in the challenge based on a combination of average retrieval accuracy across the test datasets for all languages and efficiency measured using model-size (i.e. complexity) and retrieval latency, similar to DynaBench (Kiela et al., 2021), where we provide an importance weight and finally provide a cumulative score. The validation set will be released so that the participants could reasonably evaluate their systems, but the overall test set will be kept confidential.
+We evaluate the models presented in the challenge based on a combination of average retrieval accuracy across the test datasets for all languages and efficiency measured using model-size (i.e. complexity) and retrieval latency, similar to <a href="https://arxiv.org/abs/2104.14337">DynaBench (Kiela et al., 2021)</a>, where we provide an importance weight and finally provide a cumulative score. The validation set will be released so that the participants could reasonably evaluate their systems, but the overall test set will be kept confidential.
 </p>
 <p>
 <b>Effectiveness Evaluation:</b>
-We ask the participants to provide us a TREC runfile containing the top-k judgements. We will evaluate top k=10 retrieved passages for each query, consistent with prior challenges such as TREC-DL (Craswell et al., 2020) or NeuCLIR (https://neuclir.github.io/). Once the challenge ends, we would run an automatic evaluation for the submitted TREC runfiles in the backend on our server on the hidden test queries and evaluate each participants model performance using nDCG@10 and rank-biased precision (RBP).
+We ask the participants to provide us a TREC run-file containing the top-k judgements. We will evaluate top k=10 retrieved passages for each query, consistent with prior challenges such as <a href="https://dl.acm.org/doi/abs/10.1145/3404835.3463249"> TREC-DL (Craswell et al., 2020)</a> or <a href="https://neuclir.github.io/">NeuCLIR</a>. Once the challenge ends, we would run an automatic evaluation for the submitted TREC run-files in the backend on our server on the hidden test queries and evaluate each participants model performance using nDCG@10 and rank-biased precision (RBP).
 </p>
 <p>
-<b>Efficiency Evaluation:</b> Participants would be required to open-source their final model implementations on HuggingFace hub (https://huggingface.co/), a popular open-source platform for publicly hosting models. From the submitted model URL and brief report, we would estimate model complexity and index size. At inference, for a fair comparison of retrieval latency, each participant team would be required to provide easy and intuitive APIs to help us benchmark latencies using exact and exhaustive search similar to BEIR (Thakur et al., 2021). 
+<b>Efficiency Evaluation:</b> Participants would be required to open-source their final model implementations on <a href="https://huggingface.co/">HuggingFace hub</a>, a popular open-source platform for publicly hosting models. From the submitted model URL and brief report, we would estimate model complexity and index size. At inference, for a fair comparison of retrieval latency, each participant team would be required to provide easy and intuitive APIs to help us benchmark latencies using exact and exhaustive search similar to <a href="https://arxiv.org/abs/2104.08663">BEIR (Thakur et al., 2021)</a>. 
 </p>
 <p>
-We can precisely estimate how fast or slow a system is at inference is in comparison to our baselines.
+We can precisely estimate how fast or slow a system is at inference in comparison to our baselines.
 </p>
 <h2 class="blackpar_title" id="organizers">Organizers</h2>
 <div class="row_perso">

@@ -1,0 +1,24 @@
+r0:
+  bold: 'true'
+  date: 'Date'
+  event: 'Event'
+
+r1:
+  date: 'Wed. Oct 19, 2022'
+  event: 'Data release for “known” languages'
+
+r2:
+  date: 'Wed. Nov 1, 2022'
+  event: 'Leaderboard open'
+
+r3:
+  date: 'Wed. Jan 18, 2023'
+  event: 'Data release for “surprise” languages'
+
+r4:
+  date: 'Wed. Jan 25, 2023'
+  event: 'Final submission deadline'
+
+r5:
+  date: 'Wed. Feb 1, 2023'
+  event: 'Final winners announced'
