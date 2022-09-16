@@ -18,20 +18,28 @@ layout: home
 <p>
 <b style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px"> MIRACL 🌍🙌🌏</b> (Multilingual Information Retrieval Across a Continuum of Languages) is an <a href="https://www.wsdm-conference.org/2023/program/wsdm-cup">WSDM 2023 Cup</a> challenge that focuses on retrieval across a continuum of languages.
 These languages have diverse typologies, originate from many different language families, and are associated with varying amounts of available resources &mdash; including what we typically characterize as high-resource as well as low-resource languages.
-The focus of this challenge is <i>monolingual</i> retrieval, where the queries and the corpus are in the same language (e.g., Swahili).
-Our goal is to spur research that will improve retrieval models across a broad continuum of languages, and thus improve the information access capabilities for diverse populations around that world, particularly those that have been traditionally underserved.
+The focus of this challenge is <i>monolingual</i> retrieval, where the queries and the corpus are in the <i>same</i> language (e.g., Swahili queries searching for Swahili documents).
+Our goal is to spur research that will improve retrieval models across a broad continuum of languages, and thus improve information access capabilities for diverse populations around the world, particularly those that have been traditionally underserved.
 </p>
-<br>
-<h2 class="blackpar_title" id="description">Description</h2>
 <p>
-The goal of our challenge is to better evaluate the progress of retrieval systems and help identify limitations across diverse language settings. 
-<b style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px"> 🌍🙌🌏 MIRACL</b> has two tracks: Known-Languages Retrieval and Surprise-Languages Retrieval. We require participants to submit the top-most relevant passages for both tasks. Each participant will be evaluated for retrieval performance measured in terms of accuracy and efficiency. 
-To foster training of multilingual systems, we provide the <b style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">project 🌍🙌🌏 MIRACL</b> dataset: a large balanced monolingual retrieval dataset containing human-annotated data for 18 languages, summing over 300k+ training pairs.
-We provide a wide variety of different model architectures as baselines, such as BM25, mDPR, mColBERT and mMonoT5. We hope the challenge encourages participants to collaborate and develop systems that are robust, efficient and able to retrieve
-information quickly and effectively across a multitude of languages.
+With the advent and dominance of deep learning and approaches based on neural networks (particularly transformer-based models) in information retrieval and beyond, the importance of large datasets as drivers of progress is well understood.
+For retrieval models in English, the <a href="https://microsoft.github.io/msmarco/">MS MARCO datasets</a> have had a transformative impact in advancing the field.
+To stimulate similar advances in multilingual retrieval, we have built the <b style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px"> MIRACL 🌍🙌🌏</b> dataset, comprising human-annotated passage-level relevance judgments on Wikipedia for 18 languages, totaling over 300k+ training pairs.
+Along with the dataset, WSDM 2023 Cup provides a consistent evaluation methodology, a venue for a competition-style event with prizes, a leaderboard, along with easy-to-reproduce baselines.
+There will be two tracks in this challenge: "known languages" and "surprise languages".
+In the first, we will provide data well in advance of the submission deadline.
+In the second, the identity of the languages (along with data) will only be made available at the last moment.
+The "surprise languages" task emphasizes the rapid development of language-specific capabilities.
 </p>
-<br/>
-<h2 class="blackpar_title" id="data">Data details</h2>
+
+<h2 class="blackpar_title" id="overview">News!</h2>
+
+<ul>
+  <li>September 19, 2022: Initial announcement.</li>
+</ul>
+
+<h2 class="blackpar_title" id="data">Data Details</h2>
+
 <table>
   {% assign st = site.data.stats %}
           {% for entry in st %}
