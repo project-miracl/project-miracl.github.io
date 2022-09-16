@@ -18,8 +18,8 @@ layout: home
 <p>
 <b style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px"> MIRACL 🌍🙌🌏</b> (Multilingual Information Retrieval Across a Continuum of Languages) is an <a href="https://www.wsdm-conference.org/2023/program/wsdm-cup">WSDM 2023 Cup</a> challenge that focuses on retrieval across a continuum of languages.
 These languages have diverse typologies, originate from many different language families, and are associated with varying amounts of available resources &mdash; including what we typically characterize as high-resource as well as low-resource languages.
-The focus of this challenge is <i>monolingual</i> retrieval, where the queries and the corpus are in the same language (e.g., Swahili).
-Our goal is to spur research that will improve retrieval models across a broad continuum of languages, and thus improve information access capabilities for diverse populations around that world, particularly those that have been traditionally underserved.
+The focus of this challenge is <i>monolingual</i> retrieval, where the queries and the corpus are in the <i>same</i> language (e.g., Swahili queries searching for Swahili documents).
+Our goal is to spur research that will improve retrieval models across a broad continuum of languages, and thus improve information access capabilities for diverse populations around the world, particularly those that have been traditionally underserved.
 </p>
 <p>
 With the advent and dominance of deep learning and approaches based on neural networks (particularly transformer-based models) in information retrieval and beyond, the importance of large datasets as drivers of progress is well understood.
