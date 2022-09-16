@@ -9,18 +9,20 @@ layout: home
 ---
 <div style="font-family: 'Source Sans Pro', sans-serif; background: url('/images/banner_no_text.png') no-repeat; background-size: cover; user-select: none;">
     <center>
-        <h2 style="font-size: 70px" class="blackpar_title" ><!-- <img class="column" width="9%" src="/images/raising_hands.PNG"> --> 🌍🙌🌏 MIRACL </h2>
+        <h2 style="font-size: 70px" class="blackpar_title" > MIRACL 🌍🙌🌏 </h2>
         <h3 class="blackpar_title">Multilingual Information Retrieval Across a Continuum of Languages</h3>
     </center>
 </div>
 <br>
 <h2 class="blackpar_title" id="overview">Overview</h2>
 <p>
-We propose a new challenge: <b style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px"> 🌍🙌🌏 MIRACL</b> (Multilingual Information Retrieval Across a Continuum of Languages), which focuses on evaluation of monolingual retrieval systems across a continuum of several diverse languages. These languages have diverse typology, origin, language families and external resource coverage (containing high- and low-resource languages, i.e. languages whose textual web presence and dataset availability is either high or low). 
-Prior work and datasets have focused on retrieval in English, shadowing the progress of monolingual retrieval in other languages and multilingual retrieval in multiple languages. 
+<b style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px"> MIRACL 🌍🙌🌏</b> (Multilingual Information Retrieval Across a Continuum of Languages) is an <a href="https://www.wsdm-conference.org/2023/program/wsdm-cup">WSDM 2023 Cup</a> challenge that focuses on retrieval across a continuum of languages.
+These languages have diverse typologies, originate from many different language families, and are associated with varying amounts of available resources &mdash; including what we typically characterize as high-resource as well as low-resource languages.
+The focus of this challenge is <i>monolingual</i> retrieval, where the queries and the corpus are in the same language (e.g., Swahili).
+Our goal is to spur research that will improve retrieval models across a broad continuum of languages, and thus improve the information access capabilities for diverse populations around that world, particularly those that have been traditionally underserved.
 </p>
 <br>
-<h3 class="blackpar_title" id="description">Description</h3>
+<h2 class="blackpar_title" id="description">Description</h2>
 <p>
 The goal of our challenge is to better evaluate the progress of retrieval systems and help identify limitations across diverse language settings. 
 <b style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px"> 🌍🙌🌏 MIRACL</b> has two tracks: Known-Languages Retrieval and Surprise-Languages Retrieval. We require participants to submit the top-most relevant passages for both tasks. Each participant will be evaluated for retrieval performance measured in terms of accuracy and efficiency. 
@@ -29,7 +31,7 @@ We provide a wide variety of different model architectures as baselines, such as
 information quickly and effectively across a multitude of languages.
 </p>
 <br/>
-<h3 class="blackpar_title" id="data">Data details</h3>
+<h2 class="blackpar_title" id="data">Data details</h2>
 <table>
   {% assign st = site.data.stats %}
           {% for entry in st %}
@@ -59,7 +61,7 @@ information quickly and effectively across a multitude of languages.
 	Descriptive statistics for 🌍🙌🌏 MIRACL. <b>Lang</b> denotes the language and ISO 639‑1 Code of the language; <b>Queries</b> denotes the number of queries; <b>Judgments</b> denotes the total number relevance judgments; <b>Positive Relevance</b> denotes the total number of positive relevance among <b>Judgments</b>, whereas <b>Avg Positive Relevance</b> is the average number of positive relevance per query; <b>Collection Size</b> denotes the number of passages in each language.
 </i></p>
 <br/>
-<h3 class="blackpar_title" id="leaderboard">Challenge and Leaderboard</h3>
+<h2 class="blackpar_title" id="leaderboard">Challenge and Leaderboard</h2>
 <p>
 We propose two tracks for our challenge: <ol>
     <li> <a class="nav-link " aria-current="page" href="https://eval.ai/" target="_blank">Known-Languages Retrieval</a>This track involves retrieving the top 10 passages per query for every query that appears in the known-languages list. The participants are informed of the language they will be judged on and will be granted access to the Training and Development data for known languages. The Test data will not be shared with the public in order to avoid bias and overfitting.</li> 
@@ -89,7 +91,7 @@ For both tracks, participants are allowed to use any publicly available training
           {% endfor %}
 </table>
 <br>
-<h3 class="blackpar_title" id="evaluation">Evaluation</h3>
+<h2 class="blackpar_title" id="evaluation">Evaluation</h2>
 <p>
 We evaluate the models presented in the challenge based on a combination of average retrieval accuracy across the test datasets for all languages and efficiency measured using model-size (i.e. complexity) and retrieval latency, similar to <a href="https://arxiv.org/abs/2104.14337">DynaBench (Kiela et al., 2021)</a>, where we provide an importance weight and finally provide a cumulative score. The validation set will be released so that the participants could reasonably evaluate their systems, but the overall test set will be kept confidential.
 </p>
