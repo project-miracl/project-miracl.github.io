@@ -11,14 +11,14 @@ website:
   fa-icon: 'fa-firefox'
 
 huggingface:
-  id: 'project-miracl'
-  href: 'https://huggingface.co/miracl'
+  id: 'miracl'
+  href: 'https://huggingface.co/'
   title: 'HuggingFace'
   fa-icon: 'fa-smile-o'
 
 twitter:
-  id: 'project-miracl'
-  href: 'https://twitter.com/project_miracl'
+  id: 'project_miracl'
+  href: 'https://twitter.com/'
   title: 'Twitter'
   fa-icon: 'fa-twitter'
 
