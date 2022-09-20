@@ -16,7 +16,7 @@ layout: home
 <br>
 <h2 class="blackpar_title" id="overview">Overview</h2>
 <p>
-<b style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px"> MIRACL 🌍🙌🌏</b> (Multilingual Information Retrieval Across a Continuum of Languages) is an <a href="https://www.wsdm-conference.org/2023/program/wsdm-cup">WSDM 2023 Cup</a> challenge that focuses on search across 18 different languages which collectively encompass over three billion native speakers around the world.
+<b style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px"> MIRACL 🌍🙌🌏</b> (Multilingual Information Retrieval Across a Continuum of Languages) is an <a href="https://www.wsdm-conference.org/2023/program/wsdm-cup">WSDM 2023 Cup</a> challenge that focuses on search across 18 different languages, which collectively encompass over three billion native speakers around the world.
 These languages have diverse typologies, originate from many different language families, and are associated with varying amounts of available resources &mdash; including what we typically characterize as high-resource as well as low-resource languages.
 The focus of this challenge is <i>monolingual</i> retrieval, where the queries and the corpus are in the <i>same</i> language (e.g., Swahili queries searching for Swahili documents).
 Our goal is to spur research that will improve retrieval models across a broad continuum of languages, and thus improve information access capabilities for diverse populations around the world, particularly those that have been traditionally underserved.
@@ -41,10 +41,10 @@ The "surprise languages" task emphasizes the rapid development of language-speci
 <br>
 <h2 class="blackpar_title" id="data">Dataset Details</h2>
 <p>
-The corpus used in the evaluation will be drawn from Wikipedia in different languages.
+The corpus used in the evaluation is drawn from Wikipedia in different languages.
 The <b style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px"> MIRACL 🌍🙌🌏</b> dataset is built from <a href="https://aclanthology.org/2021.mrl-1.12/">Mr. TyDi</a> as a starting point, which is in turn built on <a href="https://aclanthology.org/2020.tacl-1.30/">TyDi QA</a>.
 The following table provides an initial estimate of the number of training pairs for each language.
-As the annotation process is still ongoing, consider these _tentative_ statistics.
+As the annotation process is still ongoing, consider these <i>tentative</i> statistics.
 </p>
 <table>
   {% assign st = site.data.stats %}
@@ -77,7 +77,7 @@ As the annotation process is still ongoing, consider these _tentative_ statistic
 <br/>
 <h2 class="blackpar_title" id="leaderboard">Challenge and Leaderboard</h2>
 <p>
-Our challenge follows a standard retrieval setup: test queries will be released (at different points in time for the two tasks), and participants will submit top-_k_ results for each of the queries.
+Our challenge follows a standard retrieval setup: test queries will be released (at different points in time for the two tasks), and participants will submit top-<i>k</i> results for each of the queries.
 These results will be primarily evaluated in terms of effectiveness (i.e., relevance of the responses).
 We will build a leaderboard that tracks the effectiveness of submissions.
 More details to follow!
