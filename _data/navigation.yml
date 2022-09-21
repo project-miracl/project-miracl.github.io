@@ -1,14 +1,14 @@
 - title: 🏠 Home
   url: /index.html
-- title: 📝 Paper
-  url: /http://miracl.ai/
+#- title: 📝 Paper
+#  url: /http://miracl.ai/
 - title: 🔭Overview
   url: /index.html#overview
 - title: 👥 Organizers
   url: /index.html#organizers
-- title: 🏆 Leaderboard
-  url: https://eval.ai/
-- title: 📩 Submit
-  url: https://eval.ai/ 
-- title: ℹ FAQ
-  url: /FAQ.html
+#- title: 🏆 Leaderboard
+#  url: https://eval.ai/
+#- title: 📩 Submit
+#  url: https://eval.ai/
+#- title: ℹ FAQ
+#  url: /FAQ.html
