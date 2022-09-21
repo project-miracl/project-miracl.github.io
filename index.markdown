@@ -36,7 +36,7 @@ The "surprise languages" task emphasizes the rapid development of language-speci
 <h2 class="blackpar_title" id="overview">News!</h2>
 
 <ul>
-  <li>September 19, 2022: Initial announcement.</li>
+  <li>September 20, 2022: Initial announcement.</li>
 </ul>
 <br>
 <h2 class="blackpar_title" id="data">Dataset Details</h2>
