@@ -16,7 +16,7 @@ layout: home
 <br>
 <h2 class="blackpar_title" id="overview">Overview</h2>
 <p>
-<b style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px"> MIRACL 🌍🙌🌏</b> (Multilingual Information Retrieval Across a Continuum of Languages) is an <a href="https://www.wsdm-conference.org/2023/program/wsdm-cup">WSDM 2023 Cup</a> challenge that focuses on retrieval across a continuum of languages.
+<b style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px"> MIRACL 🌍🙌🌏</b> (Multilingual Information Retrieval Across a Continuum of Languages) is an <a href="https://www.wsdm-conference.org/2023/program/wsdm-cup">WSDM 2023 Cup</a> challenge that focuses on search across 18 different languages, which collectively encompass over three billion native speakers around the world.
 These languages have diverse typologies, originate from many different language families, and are associated with varying amounts of available resources &mdash; including what we typically characterize as high-resource as well as low-resource languages.
 The focus of this challenge is <i>monolingual</i> retrieval, where the queries and the corpus are in the <i>same</i> language (e.g., Swahili queries searching for Swahili documents).
 Our goal is to spur research that will improve retrieval models across a broad continuum of languages, and thus improve information access capabilities for diverse populations around the world, particularly those that have been traditionally underserved.
@@ -24,22 +24,28 @@ Our goal is to spur research that will improve retrieval models across a broad c
 <p>
 With the advent and dominance of deep learning and approaches based on neural networks (particularly transformer-based models) in information retrieval and beyond, the importance of large datasets as drivers of progress is well understood.
 For retrieval models in English, the <a href="https://microsoft.github.io/msmarco/">MS MARCO datasets</a> have had a transformative impact in advancing the field.
-To stimulate similar advances in multilingual retrieval, we have built the <b style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px"> MIRACL 🌍🙌🌏</b> dataset, comprising human-annotated passage-level relevance judgments on Wikipedia for 18 languages, totaling over 300k+ training pairs.
-Along with the dataset, WSDM 2023 Cup provides a consistent evaluation methodology, a venue for a competition-style event with prizes, a leaderboard, along with easy-to-reproduce baselines.
+To stimulate similar advances in multilingual retrieval, we have built the <b style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px"> MIRACL 🌍🙌🌏</b> dataset, comprising human-annotated passage-level relevance judgments on Wikipedia for 18 languages, totaling over 600k+ training pairs.
+Along with the dataset, WSDM 2023 Cup provides a common evaluation methodology, a venue for a competition-style event with prizes, a leaderboard.
+To get participants off the ground quickly our team will provide easy-to-reproduce baselines.
 There will be two tracks in this challenge: "known languages" and "surprise languages".
 In the first, we will provide data well in advance of the submission deadline.
 In the second, the identity of the languages (along with data) will only be made available at the last moment.
 The "surprise languages" task emphasizes the rapid development of language-specific capabilities.
 </p>
-
+<br>
 <h2 class="blackpar_title" id="overview">News!</h2>
 
 <ul>
-  <li>September 19, 2022: Initial announcement.</li>
+  <li>September 20, 2022: Initial announcement.</li>
 </ul>
-
-<h2 class="blackpar_title" id="data">Data Details</h2>
-
+<br>
+<h2 class="blackpar_title" id="data">Dataset Details</h2>
+<p>
+The corpus used in the evaluation is drawn from Wikipedia in different languages.
+The <b style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px"> MIRACL 🌍🙌🌏</b> dataset is built from <a href="https://aclanthology.org/2021.mrl-1.12/">Mr. TyDi</a> as a starting point, which is in turn built on <a href="https://aclanthology.org/2020.tacl-1.30/">TyDi QA</a>.
+The following table provides an initial estimate of the number of training pairs for each language.
+As the annotation process is still ongoing, consider these <i>tentative</i> statistics.
+</p>
 <table>
   {% assign st = site.data.stats %}
           {% for entry in st %}
@@ -71,13 +77,10 @@ The "surprise languages" task emphasizes the rapid development of language-speci
 <br/>
 <h2 class="blackpar_title" id="leaderboard">Challenge and Leaderboard</h2>
 <p>
-We propose two tracks for our challenge: <ol>
-    <li> <a class="nav-link " aria-current="page" href="https://eval.ai/" target="_blank">Known-Languages Retrieval</a>This track involves retrieving the top 10 passages per query for every query that appears in the known-languages list. The participants are informed of the language they will be judged on and will be granted access to the Training and Development data for known languages. The Test data will not be shared with the public in order to avoid bias and overfitting.</li> 
-    <li> <a class="nav-link " aria-current="page" href="https://eval.ai/" target="_blank">Surprise-Languages Retrieval</a>This track involves retrieving the top 10 passages for each query present in the surprise-language list. The participants will not be informed of the details of the language until two weeks before the submission deadline. The participants will not have access to any Training or Development data in order to maintain the secrecy of the surprise languages. This challenge aims to measure the robustness of a retriever model to generalize to unseen languages during training. The surprise languages will include both high-resource and low-resource languages.</li>
-</ol>
-</p>
-<p>
-For both tracks, participants are allowed to use any publicly available training data that does not contain the information from our development and test set. However, we expect to details on the nature of each training data.
+Our challenge follows a standard retrieval setup: test queries will be released (at different points in time for the two tasks), and participants will submit top-<i>k</i> results for each of the queries.
+These results will be primarily evaluated in terms of effectiveness (i.e., relevance of the responses).
+We will build a leaderboard that tracks the effectiveness of submissions.
+More details to follow!
 </p>
 <br>
 <h3 class="blackpar_title" id="schedule">Schedule</h3>
@@ -98,21 +101,7 @@ For both tracks, participants are allowed to use any publicly available training
               {% endif %}
           {% endfor %}
 </table>
-<br>
-<h2 class="blackpar_title" id="evaluation">Evaluation</h2>
-<p>
-We evaluate the models presented in the challenge based on a combination of average retrieval accuracy across the test datasets for all languages and efficiency measured using model-size (i.e. complexity) and retrieval latency, similar to <a href="https://arxiv.org/abs/2104.14337">DynaBench (Kiela et al., 2021)</a>, where we provide an importance weight and finally provide a cumulative score. The validation set will be released so that the participants could reasonably evaluate their systems, but the overall test set will be kept confidential.
-</p>
-<p>
-<b>Effectiveness Evaluation:</b>
-We ask the participants to provide us a TREC run-file containing the top-k judgements. We will evaluate top k=10 retrieved passages for each query, consistent with prior challenges such as <a href="https://dl.acm.org/doi/abs/10.1145/3404835.3463249"> TREC-DL (Craswell et al., 2020)</a> or <a href="https://neuclir.github.io/">NeuCLIR</a>. Once the challenge ends, we would run an automatic evaluation for the submitted TREC run-files in the backend on our server on the hidden test queries and evaluate each participants model performance using nDCG@10 and rank-biased precision (RBP).
-</p>
-<p>
-<b>Efficiency Evaluation:</b> Participants would be required to open-source their final model implementations on <a href="https://huggingface.co/">HuggingFace hub</a>, a popular open-source platform for publicly hosting models. From the submitted model URL and brief report, we would estimate model complexity and index size. At inference, for a fair comparison of retrieval latency, each participant team would be required to provide easy and intuitive APIs to help us benchmark latencies using exact and exhaustive search similar to <a href="https://arxiv.org/abs/2104.08663">BEIR (Thakur et al., 2021)</a>. 
-</p>
-<p>
-We can precisely estimate how fast or slow a system is at inference in comparison to our baselines.
-</p>
+<br/>
 <h2 class="blackpar_title" id="organizers">Organizers</h2>
 <div class="row_perso">
     <p>
