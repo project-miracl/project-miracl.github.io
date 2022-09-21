@@ -9,33 +9,33 @@ r0:
 
 r1:
   lang: 'Arabic (ar)'
-  q: '7K'
-  j: '75K'
-  pr: '14K'
+  q: '8K'
+  j: '83K'
+  pr: '15K'
   avg: '1.88'
   size: '2M'
 
 r2:
   lang: 'English (en)'
-  q: '307'
-  j: '3K'
-  pr: '758'
+  q: '6K'
+  j: '61K'
+  pr: '17K'
   avg: '2.47'
   size: '32K'
 
 r3:
   lang: 'Spanish (es)'
-  q: '1K'
-  j: '16K'
-  pr: '7K'
+  q: '4K'
+  j: '43K'
+  pr: '2K'
   avg: '4.72'
   size: '10M'
 
 r4:
   lang: 'Farsi (fa)'
-  q: '3K'
-  j: '34K'
-  pr: '7K'
+  q: '4K'
+  j: '43K'
+  pr: '8K'
   avg: '2.09'
   size: '2M'
 
@@ -49,25 +49,25 @@ r5:
 
 r6:
   lang: 'Indonesian (id)'
-  q: '5K'
-  j: '50K'
-  pr: '15K'
+  q: '6K'
+  j: '62K'
+  pr: '19K'
   avg: '3.00'
   size: '479K'
 
 r7:
   lang: 'Japanese (ja)'
-  q: '4K'
-  j: '44K'
-  pr: '9K'
+  q: '6K'
+  j: '61K'
+  pr: '12K'
   avg: '2.05'
   size: '6M'
 
 r8:
   lang: 'Korean (ko)'
-  q: '1K'
-  j: '13K'
-  pr: '2K'
+  q: '2K'
+  j: '33K'
+  pr: '6K'
   avg: '1.99'
   size: '1M'
 
@@ -89,17 +89,17 @@ r10:
 
 r11:
   lang: 'Telugu (te)'
-  q: '667'
-  j: '13K'
-  pr: '819'
+  q: '2K'
+  j: '21K'
+  pr: '2.7K'
   avg: '1.23'
   size: '518K'
 
 r12:
   lang: 'Thai (th)'
   q: '3K'
-  j: '31K'
-  pr: '5K'
+  j: '38K'
+  pr: '6K'
   avg: '1.75'
   size: '542K'
 
@@ -111,59 +111,11 @@ r13:
   avg: '2.44'
   size: '4M'
 
-# r00:
-#   lang: 'Surprise language'
-#   q: '-'
-#   j: '-'
-#   pr: '-'
-#   avg: '-'
-#   size: '-'
-
-# r14:
-#   lang: 'Swahili (sw)'
-#   q: '1K'
-#   j: '12K'
-#   pr: '2K'
-#   avg: '2.14'
-#   size: '131K'
-
-# r15:
-#   lang: 'German (de)'
-#   q: '90'
-#   j: '891'
-#   pr: '169'
-#   avg: '1.88'
-#   size: '15M'
-
-# r16:
-#   lang: 'Finnish (fi)'
-#   q: '2K'
-#   j: '19K'
-#   pr: '4K'
-#   avg: '2.00'
-#   size: '1M'
-
-# r17:
-#   lang: 'French (Fr)'
-#   q: '138'
-#   j: '1K'
-#   pr: '447'
-#   avg: '3.24'
-#   size: '14K'
-
-# r18:
-#   lang: 'Yoruba (yo)'
-#   q: '407'
-#   j: '4K'
-#   pr: '466'
-#   avg: '1.14'
-#   size: '49K'
-
 r19:
   bold: 'true'
   lang: 'Total'
-  q: '42K'
-  j: '434K'
-  pr: '97K'
+  q: '66K'
+  j: '670K'
+  pr: '159K'
   avg: '-'
   size: '105M'
