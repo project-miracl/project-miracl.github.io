@@ -32,6 +32,9 @@ In the first, we will provide data well in advance of the submission deadline.
 In the second, the identity of the languages (along with data) will only be made available at the last moment.
 The "surprise languages" task emphasizes the rapid development of language-specific capabilities.
 </p>
+<p>
+If you're interested in hearing updates, please join our mailing list <a href="https://forms.gle/aCbjRQ9CPeXViWcaA">here</a>.
+</p>
 <br>
 <h2 class="blackpar_title" id="overview">News!</h2>
 
