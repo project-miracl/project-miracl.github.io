@@ -57,42 +57,49 @@ Checkout our <a href="https://github.com/project-miracl/miracl">Github repositor
 </p>
 
 <p>
-The corpus used in the evaluation is drawn from Wikipedia in different languages.
-The <b style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px"> MIRACL 🌍🙌🌏</b> dataset is built from <a href="https://aclanthology.org/2021.mrl-1.12/">Mr. TyDi</a> as a starting point, which is in turn built on <a href="https://aclanthology.org/2020.tacl-1.30/">TyDi QA</a>.
 The following table provides the number of topics (= queries), relevance judgment (= relevance labels) for each (language, split) combination, and the number of passages and Wikipedia articles in the corpora.
 </p>
 <table>
   {% assign st = site.data.stats %}
           {% for entry in st %}
               {% assign key = entry | first %}
-              {% if st[key].bold %}
+              {% if st[key].header1 %}
                 <tr>
-                  <th><b>{{ st[key].lang }}</b></th>
-                  <th><b>{{ st[key].q_train }}</b></th>
-                  <th><b>{{ st[key].j_train }}</b></th>
-                  <th><b>{{ st[key].q_dev }}</b></th>
-                  <th><b>{{ st[key].j_dev }}</b></th>
-                  <th><b>{{ st[key].q_test_a}}</b></th>
-                  <th><b>{{ st[key].j_test_a }}</b></th>
-                  <th><b>{{ st[key].q_test_b }}</b></th>
-                  <th><b>{{ st[key].j_test_b }}</b></th>
-                  <th><b>{{ st[key].n_passage }}</b></th>
-                  <th><b>{{ st[key].n_article }}</b></th>
+                  <th rowspan="2"><b>{{ st[key].lang }}</b></th>
+                  <th colspan="2"><b>{{ st[key].q_train }}</b></th>
+                  <th colspan="2"><b>{{ st[key].q_dev }}</b></th>
+                  <th colspan="2"><b>{{ st[key].q_test_a}}</b></th>
+                  <th colspan="2"><b>{{ st[key].q_test_b }}</b></th>
+                  <th rowspan="2"><b>{{ st[key].n_passage }}</b></th>
+                  <th rowspan="2"><b>{{ st[key].n_article }}</b></th>
                 </tr>
               {% else %}
-                <tr>
-                  <th><b>{{ st[key].lang }}</b></th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">{{ st[key].q_train }}</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">{{ st[key].j_train }}</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">{{ st[key].q_dev }}</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">{{ st[key].j_dev }}</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">{{ st[key].q_test_a }}</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">{{ st[key].j_test_a }}</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">{{ st[key].q_test_b }}</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">{{ st[key].j_test_b }}</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">{{ st[key].n_passage }}</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">{{ st[key].n_article }}</th>
-                </tr>
+                {% if st[key].header2 %}
+                  <tr>
+                    <th><b>{{ st[key].q_train }}</b></th>
+                    <th><b>{{ st[key].j_train }}</b></th>
+                    <th><b>{{ st[key].q_dev }}</b></th>
+                    <th><b>{{ st[key].j_dev }}</b></th>
+                    <th><b>{{ st[key].q_test_a}}</b></th>
+                    <th><b>{{ st[key].j_test_a }}</b></th>
+                    <th><b>{{ st[key].q_test_b }}</b></th>
+                    <th><b>{{ st[key].j_test_b }}</b></th>
+                  </tr>
+                {% else %}
+                  <tr>
+                    <th><b>{{ st[key].lang }}</b></th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">{{ st[key].q_train }}</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">{{ st[key].j_train }}</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">{{ st[key].q_dev }}</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">{{ st[key].j_dev }}</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">{{ st[key].q_test_a }}</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">{{ st[key].j_test_a }}</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">{{ st[key].q_test_b }}</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">{{ st[key].j_test_b }}</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">{{ st[key].n_passage }}</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">{{ st[key].n_article }}</th>
+                  </tr>
+                {% endif %}
               {% endif %}
           {% endfor %}
 </table>
