@@ -34,7 +34,7 @@ The "surprise languages" task emphasizes the rapid development of language-speci
 </p>
 
 <p>
-Connect with us!
+<h2 class="blackpar_title" id="connect">Connect with us!</h2>
 <ul>
 <li>📬 <a href="https://forms.gle/aCbjRQ9CPeXViWcaA">Mailing list</a></li> 
 <li> 💬 <a href="https://join.slack.com/t/slack-zlr3806/shared_invite/zt-1i2xm1602-kSoVt0MUNUSDln_VMoMHDg">Slack Workspace</a></li> 
@@ -43,7 +43,7 @@ Connect with us!
 </p>
 <br>
 
-<h2 class="blackpar_title" id="overview">News!</h2>
+<h2 class="blackpar_title" id="news">News!</h2>
 
 <ul>
   <li>September 20, 2022: Initial announcement.</li>
