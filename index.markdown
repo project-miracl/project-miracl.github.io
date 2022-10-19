@@ -39,7 +39,7 @@ Connect with us!
 <li>📬 <a href="https://forms.gle/aCbjRQ9CPeXViWcaA">Mailing list</a></li> 
 <li> 💬 <a href="https://join.slack.com/t/slack-zlr3806/shared_invite/zt-1i2xm1602-kSoVt0MUNUSDln_VMoMHDg">Slack Workspace</a></li> 
 <li> 📣 <a href="https://twitter.com/project_miracl?s=21&t=Qf9LrVerhhN1hsXs1gdWhw">Twitter</a></li> 
-<ul>
+</ul>
 </p>
 <br>
 
@@ -52,9 +52,14 @@ Connect with us!
 <br>
 <h2 class="blackpar_title" id="data">Dataset Details</h2>
 <p>
+The topics and judgment in training and development set are now released, as well as the corpora.
+Checkout our <a href="https://github.com/project-miracl/miracl">Github repository</a> and <a href="https://arxiv.org/abs/2210.09984">paper</a> for more details!
+</p>
+
+<p>
 The corpus used in the evaluation is drawn from Wikipedia in different languages.
 The <b style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px"> MIRACL 🌍🙌🌏</b> dataset is built from <a href="https://aclanthology.org/2021.mrl-1.12/">Mr. TyDi</a> as a starting point, which is in turn built on <a href="https://aclanthology.org/2020.tacl-1.30/">TyDi QA</a>.
-The following table provides the number of topics (= queries), relevance judgement (= relevance labels) for each (language, split) combination, and the number of passages and Wikipedia articles in the corpora.
+The following table provides the number of topics (= queries), relevance judgment (= relevance labels) for each (language, split) combination, and the number of passages and Wikipedia articles in the corpora.
 </p>
 <table>
   {% assign st = site.data.stats %}
@@ -92,7 +97,7 @@ The following table provides the number of topics (= queries), relevance judgeme
           {% endfor %}
 </table>
 <p><i>
-	Descriptive statistics for 🌍🙌🌏 MIRACL. <b>Lang</b> denotes the language and ISO 639‑1 Code of the language; <b>Queries</b> denotes the number of queries; <b>Judgments</b> denotes the total number relevance judgments; <b>Positive Relevance</b> denotes the total number of positive relevance among <b>Judgments</b>, whereas <b>Avg Positive Relevance</b> is the average number of positive relevance per query; <b>Collection Size</b> denotes the number of passages in each language.
+	Descriptive statistics for 🌍🙌🌏 MIRACL. <b>Lang</b> denotes the language and ISO 639‑1 Code of the language; <b># Q</b> denotes the number of queries; <b># J</b> denotes the total number relevance judgments (including both positive and negative judgments); <b># Passages </b> denotes the number of passages in each language and <b> # Articles </b> denotes the number of Wikipedia articles in the same language.
 </i></p>
 <br/>
 <h2 class="blackpar_title" id="leaderboard">Challenge and Leaderboard</h2>
