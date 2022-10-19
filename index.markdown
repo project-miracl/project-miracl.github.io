@@ -32,22 +32,29 @@ In the first, we will provide data well in advance of the submission deadline.
 In the second, the identity of the languages (along with data) will only be made available at the last moment.
 The "surprise languages" task emphasizes the rapid development of language-specific capabilities.
 </p>
+
 <p>
-If you're interested in hearing updates, please join our mailing list <a href="https://forms.gle/aCbjRQ9CPeXViWcaA">here</a>.
+Connect with us!
+<ul>
+<li>📬 <a href="https://forms.gle/aCbjRQ9CPeXViWcaA">Mailing list</a></li> 
+<li> 💬 <a href="https://join.slack.com/t/slack-zlr3806/shared_invite/zt-1i2xm1602-kSoVt0MUNUSDln_VMoMHDg">Slack Workspace</a></li> 
+<li> 📣 <a href="https://twitter.com/project_miracl?s=21&t=Qf9LrVerhhN1hsXs1gdWhw">Twitter</a></li> 
+<ul>
 </p>
 <br>
+
 <h2 class="blackpar_title" id="overview">News!</h2>
 
 <ul>
   <li>September 20, 2022: Initial announcement.</li>
+  <li>Oct 19, 2022: Release training and development set of known languages.</li>
 </ul>
 <br>
 <h2 class="blackpar_title" id="data">Dataset Details</h2>
 <p>
 The corpus used in the evaluation is drawn from Wikipedia in different languages.
 The <b style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px"> MIRACL 🌍🙌🌏</b> dataset is built from <a href="https://aclanthology.org/2021.mrl-1.12/">Mr. TyDi</a> as a starting point, which is in turn built on <a href="https://aclanthology.org/2020.tacl-1.30/">TyDi QA</a>.
-The following table provides an initial estimate of the number of training pairs for each language.
-As the annotation process is still ongoing, consider these <i>tentative</i> statistics.
+The following table provides the number of topics (= queries), relevance judgement (= relevance labels) for each (language, split) combination, and the number of passages and Wikipedia articles in the corpora.
 </p>
 <table>
   {% assign st = site.data.stats %}
@@ -56,20 +63,30 @@ As the annotation process is still ongoing, consider these <i>tentative</i> stat
               {% if st[key].bold %}
                 <tr>
                   <th><b>{{ st[key].lang }}</b></th>
-                  <th><b>{{ st[key].q }}</b></th>
-                  <th><b>{{ st[key].j }}</b></th>
-                  <th><b>{{ st[key].pr }}</b></th>
-                  <th><b>{{ st[key].avg }}</b></th>
-                  <th><b>{{ st[key].size }}</b></th>
+                  <th><b>{{ st[key].q_train }}</b></th>
+                  <th><b>{{ st[key].j_train }}</b></th>
+                  <th><b>{{ st[key].q_dev }}</b></th>
+                  <th><b>{{ st[key].j_dev }}</b></th>
+                  <th><b>{{ st[key].q_test_a}}</b></th>
+                  <th><b>{{ st[key].j_test_a }}</b></th>
+                  <th><b>{{ st[key].q_test_b }}</b></th>
+                  <th><b>{{ st[key].j_test_b }}</b></th>
+                  <th><b>{{ st[key].n_passage }}</b></th>
+                  <th><b>{{ st[key].n_article }}</b></th>
                 </tr>
               {% else %}
                 <tr>
                   <th><b>{{ st[key].lang }}</b></th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">{{ st[key].q }}</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">{{ st[key].j }}</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">{{ st[key].pr }}</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">{{ st[key].avg }}</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">{{ st[key].size }}</th>
+                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">{{ st[key].q_train }}</th>
+                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">{{ st[key].j_train }}</th>
+                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">{{ st[key].q_dev }}</th>
+                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">{{ st[key].j_dev }}</th>
+                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">{{ st[key].q_test_a }}</th>
+                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">{{ st[key].j_test_a }}</th>
+                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">{{ st[key].q_test_b }}</th>
+                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">{{ st[key].j_test_b }}</th>
+                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">{{ st[key].n_passage }}</th>
+                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">{{ st[key].n_article }}</th>
                 </tr>
               {% endif %}
           {% endfor %}
