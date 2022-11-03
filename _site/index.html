@@ -8,24 +8,24 @@
   
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-  <meta name="keywords" content="ENLSP 2022, ENLSP II, enlsp ii, NLP, KD, knowledge distillation, workshop, natural language processing, deep learning, machine learning, neurips workshop 2022, ENLSP,model compression,Efficient Natural Language and Speech Processing,tinyML, BERT, tinyBERT, roberta, distilRoberta, distilBERT, knowledge transfer, efficient knowledge transfer,speech, pre-trained language models, language models, GPT, GPT compression, optimization, speech processing, speech optimization, Multi-domain training, fast pre-training, multimodal, Efficient Training, Data Efficiency, Edge Intelligence, zero-shot learning, few-shot learning, data augumentation, NEURIPS, neurips 2022, NIPS, ENLSP">
+  <meta name="keywords" content="MIRACL, WSDM Cup 2023, NLP, IR, WSDM, natural language processing, information retrieval, deep learning, machine learning, wsdm 2023, BERT, multilingual retrieval, crosslingual, monolingual retrieval, pre-trained language models, language models, zero-shot learning, few-shot learning, data augumentation">
   <meta name="google-site-verification" content="2FYQh4GH2FAIelCcPu2MkMhMqFo76u69G5uxcopfuC8" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>🌍🙌🌏 MIRACL | Large balanced multilingual benchmark for IR and DR tasks.</title>
+<title>MIRACL 🌍🙌🌏 | Multilingual Information Retrieval Across a Continuum of Languages</title>
 <meta name="generator" content="Jekyll v4.2.2" />
-<meta property="og:title" content="🌍🙌🌏 MIRACL" />
+<meta property="og:title" content="MIRACL 🌍🙌🌏" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Large balanced multilingual benchmark for IR and DR tasks." />
-<meta property="og:description" content="Large balanced multilingual benchmark for IR and DR tasks." />
+<meta name="description" content="Multilingual Information Retrieval Across a Continuum of Languages" />
+<meta property="og:description" content="Multilingual Information Retrieval Across a Continuum of Languages" />
 <link rel="canonical" href="http://localhost:4000/" />
 <meta property="og:url" content="http://localhost:4000/" />
-<meta property="og:site_name" content="🌍🙌🌏 MIRACL" />
+<meta property="og:site_name" content="MIRACL 🌍🙌🌏" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="🌍🙌🌏 MIRACL" />
+<meta property="twitter:title" content="MIRACL 🌍🙌🌏" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"Large balanced multilingual benchmark for IR and DR tasks.","headline":"🌍🙌🌏 MIRACL","name":"🌍🙌🌏 MIRACL","url":"http://localhost:4000/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","description":"Multilingual Information Retrieval Across a Continuum of Languages","headline":"MIRACL 🌍🙌🌏","name":"MIRACL 🌍🙌🌏","url":"http://localhost:4000/"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="🌍🙌🌏 MIRACL" />
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="MIRACL 🌍🙌🌏" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -60,7 +60,7 @@
             
             
 				<li class="nav-item">
-				  <a class="nav-link " aria-current="page" href="/http://miracl.ai/">📝 Paper</a>
+				  <a class="nav-link " aria-current="page" href="https://arxiv.org/abs/2210.09984">📝 Paper</a>
 				</li>
             
         
@@ -84,7 +84,7 @@
             
             
 				<li class="nav-item">
-				  <a class="nav-link " aria-current="page" href="https://eval.ai/">🏆 Leaderboard</a>
+				  <a class="nav-link " aria-current="page" href="https://huggingface.co/datasets/miracl/miracl">🤗 Datasets</a>
 				</li>
             
         
@@ -92,7 +92,7 @@
             
             
 				<li class="nav-item">
-				  <a class="nav-link " aria-current="page" href="https://eval.ai/">📩 Submit</a>
+				  <a class="nav-link " aria-current="page" href="https://eval.ai/web/challenges/challenge-page/1881/overview">🏆 Leaderboard</a>
 				</li>
             
         
@@ -100,7 +100,7 @@
             
             
 				<li class="nav-item">
-				  <a class="nav-link " aria-current="page" href="/FAQ.html">ℹ FAQ</a>
+				  <a class="nav-link " aria-current="page" href="https://github.com/project-miracl/miracl">📖 Documentation</a>
 				</li>
             
         
@@ -116,224 +116,403 @@
       <div class="wrapper">
         <div class="home"><div style="font-family: 'Source Sans Pro', sans-serif; background: url('/images/banner_no_text.png') no-repeat; background-size: cover; user-select: none;">
     <center>
-        <h2 style="font-size: 70px" class="blackpar_title"><!-- <img class="column" width="9%" src="/images/raising_hands.PNG"> --> 🌍🙌🌏 MIRACL </h2>
+        <h2 style="font-size: 70px" class="blackpar_title"> MIRACL 🌍🙌🌏 </h2>
         <h3 class="blackpar_title">Multilingual Information Retrieval Across a Continuum of Languages</h3>
     </center>
 </div>
 <p><br /></p>
 <h2 class="blackpar_title" id="overview">Overview</h2>
 <p>
-We propose a new challenge: <b style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px"> 🌍🙌🌏 MIRACL</b> (Multilingual Information Retrieval Across a Continuum of Languages), which focuses on evaluation of monolingual retrieval systems across a continuum of several diverse languages. These languages have diverse typology, origin, language families and external resource coverage (containing high- and low-resource languages, i.e. languages whose textual web presence and dataset availability is either high or low). 
-Prior work and datasets have focused on retrieval in English, shadowing the progress of monolingual retrieval in other languages and multilingual retrieval in multiple languages. 
+<b style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px"> MIRACL 🌍🙌🌏</b> (Multilingual Information Retrieval Across a Continuum of Languages) is an <a href="https://www.wsdm-conference.org/2023/program/wsdm-cup">WSDM 2023 Cup</a> challenge that focuses on search across 18 different languages, which collectively encompass over three billion native speakers around the world.
+These languages have diverse typologies, originate from many different language families, and are associated with varying amounts of available resources &mdash; including what we typically characterize as high-resource as well as low-resource languages.
+The focus of this challenge is <i>monolingual</i> retrieval, where the queries and the corpus are in the <i>same</i> language (e.g., Swahili queries searching for Swahili documents).
+Our goal is to spur research that will improve retrieval models across a broad continuum of languages, and thus improve information access capabilities for diverse populations around the world, particularly those that have been traditionally underserved.
 </p>
-<p><br /></p>
-<h3 class="blackpar_title" id="description">Description</h3>
 <p>
-The goal of our challenge is to better evaluate the progress of retrieval systems and help identify limitations across diverse language settings. 
-<b style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px"> 🌍🙌🌏 MIRACL</b> has two tracks: Known-Languages Retrieval and Surprise-Languages Retrieval. We require participants to submit the top-most relevant passages for both tasks. Each participant will be evaluated for retrieval performance measured in terms of accuracy and efficiency. 
-To foster training of multilingual systems, we provide the <b style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">project 🌍🙌🌏 MIRACL</b> dataset: a large balanced monolingual retrieval dataset containing human-annotated data for 18 languages, summing over 300k+ training pairs.
-We provide a wide variety of different model architectures as baselines, such as BM25, mDPR, mColBERT and mMonoT5. We hope the challenge encourages participants to collaborate and develop systems that are robust, efficient and able to retrieve
-information quickly and effectively across a multitude of languages.
+With the advent and dominance of deep learning and approaches based on neural networks (particularly transformer-based models) in information retrieval and beyond, the importance of large datasets as drivers of progress is well understood.
+For retrieval models in English, the <a href="https://microsoft.github.io/msmarco/">MS MARCO datasets</a> have had a transformative impact in advancing the field.
+To stimulate similar advances in multilingual retrieval, we have built the <b style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px"> MIRACL 🌍🙌🌏</b> dataset, comprising human-annotated passage-level relevance judgments on Wikipedia for 18 languages, totaling over 600k+ training pairs.
+Along with the dataset, WSDM 2023 Cup provides a common evaluation methodology, a venue for a competition-style event with prizes, a leaderboard.
+To get participants off the ground quickly our team will provide easy-to-reproduce baselines.
+There will be two tracks in this challenge: "known languages" and "surprise languages".
+In the first, we will provide data well in advance of the submission deadline.
+In the second, the identity of the languages (along with data) will only be made available at the last moment.
+The "surprise languages" task emphasizes the rapid development of language-specific capabilities.
+</p>
+
+<p>
+<h2 class="blackpar_title" id="connect">Connect with us!</h2>
+<ul>
+<li>📬 <a href="https://forms.gle/aCbjRQ9CPeXViWcaA">Mailing list</a></li> 
+<li> 💬 <a href="https://join.slack.com/t/slack-zlr3806/shared_invite/zt-1i2xm1602-kSoVt0MUNUSDln_VMoMHDg">Slack Workspace</a></li> 
+<li> 📣 <a href="https://twitter.com/project_miracl?s=21&amp;t=Qf9LrVerhhN1hsXs1gdWhw">Twitter</a></li> 
+</ul>
 </p>
 <p><br /></p>
-<h3 class="blackpar_title" id="data">Data details</h3>
+
+<h2 class="blackpar_title" id="news">News!</h2>
+
+<ul>
+  <li>September 20, 2022: Initial announcement.</li>
+  <li>Oct 19, 2022: Release training and development set of known languages.</li>
+</ul>
+<p><br /></p>
+<h2 class="blackpar_title" id="data">Dataset Details</h2>
+<p>
+The topics and judgment in training and development set are now released, as well as the corpora.
+Checkout our <a href="https://github.com/project-miracl/miracl">Github repository</a> and <a href="https://arxiv.org/abs/2210.09984">paper</a> for more details!
+</p>
+
+<p>
+The following table provides the number of topics (= queries), relevance judgment (= relevance labels) for each (language, split) combination, and the number of passages and Wikipedia articles in the corpora.
+</p>
 <table>
   
           
               
               
                 <tr>
-                  <th><b>Lang</b></th>
-                  <th><b>Queries</b></th>
-                  <th><b>Judgments</b></th>
-                  <th><b>Positive Relevance</b></th>
-                  <th><b>Avg Positive Relevance</b></th>
-                  <th><b>Collection Size</b></th>
+                  <th rowspan="2"><b>Lang</b></th>
+                  <th colspan="2"><b>Train</b></th>
+                  <th colspan="2"><b>Dev</b></th>
+                  <th colspan="2"><b>Test-A</b></th>
+                  <th colspan="2"><b>Test-B</b></th>
+                  <th rowspan="2"><b># Passages</b></th>
+                  <th rowspan="2"><b># Articles</b></th>
                 </tr>
               
           
               
               
-                <tr>
-                  <th><b>Arabic (ar)</b></th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">7K</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">75K</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">14K</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">1.88</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">2M</th>
-                </tr>
+                
+                  <tr>
+                    <th><b># Q</b></th>
+                    <th><b># J</b></th>
+                    <th><b># Q</b></th>
+                    <th><b># J</b></th>
+                    <th><b># Q</b></th>
+                    <th><b># J</b></th>
+                    <th><b># Q</b></th>
+                    <th><b># J</b></th>
+                  </tr>
+                
               
           
               
               
-                <tr>
-                  <th><b>English (en)</b></th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">307</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">3K</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">758</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">2.47</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">32K</th>
-                </tr>
+                
+                  <tr>
+                    <th><b>Arabic (ar)</b></th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">3,495</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">25,382</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">2,896</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">29,197</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">936</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">9,325</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">1,405</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">14,036</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">2,061,414</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">656,982</th>
+                  </tr>
+                
               
           
               
               
-                <tr>
-                  <th><b>Spanish (es)</b></th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">1K</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">16K</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">7K</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">4.72</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">10M</th>
-                </tr>
+                
+                  <tr>
+                    <th><b>Bengali (bn)</b></th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">1,631</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">16,754</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">411</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">4,206</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">102</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">1,037</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">1,130</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">11,286</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">297,265</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">63,762</th>
+                  </tr>
+                
               
           
               
               
-                <tr>
-                  <th><b>Farsi (fa)</b></th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">3K</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">34K</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">7K</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">2.09</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">2M</th>
-                </tr>
+                
+                  <tr>
+                    <th><b>English (en)</b></th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">2,863</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">29,416</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">799</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">8,350</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">734</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">5,617</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">1,790</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">18,241</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">32,893,221</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">5,758,285</th>
+                  </tr>
+                
               
           
               
               
-                <tr>
-                  <th><b>Hindi (hi)</b></th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">2K</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">22K</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">4K</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">2.02</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">506K</th>
-                </tr>
+                
+                  <tr>
+                    <th><b>Spanish (es)</b></th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">2,162</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">21,531</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">648</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">6,443</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">0</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">0</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">1,515</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">15,074</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">10,373,953</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">1,669,181</th>
+                  </tr>
+                
               
           
               
               
-                <tr>
-                  <th><b>Indonesian (id)</b></th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">5K</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">50K</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">15K</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">3.00</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">479K</th>
-                </tr>
+                
+                  <tr>
+                    <th><b>Persian (fa)</b></th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">2,107</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">21,844</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">632</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">6,571</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">0</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">0</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">1,476</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">15,313</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">2,207,172</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">857,827</th>
+                  </tr>
+                
               
           
               
               
-                <tr>
-                  <th><b>Japanese (ja)</b></th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">4K</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">44K</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">9K</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">2.05</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">6M</th>
-                </tr>
+                
+                  <tr>
+                    <th><b>Finnish (fi)</b></th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">2,897</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">20,350</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">1,271</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">12,008</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">1,060</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">10,586</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">711</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">7,100</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">1,883,509</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">447,815</th>
+                  </tr>
+                
               
           
               
               
-                <tr>
-                  <th><b>Korean (ko)</b></th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">1K</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">13K</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">2K</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">1.99</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">1M</th>
-                </tr>
+                
+                  <tr>
+                    <th><b>French (fr)</b></th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">1,143</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">11,426</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">343</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">3,429</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">0</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">0</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">801</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">8,008</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">14,636,953</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">2,325,608</th>
+                  </tr>
+                
               
           
               
               
-                <tr>
-                  <th><b>Russian (ru)</b></th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">5K</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">50K</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">13K</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">2.64</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">9M</th>
-                </tr>
+                
+                  <tr>
+                    <th><b>Hindi (hi)</b></th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">1169</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">11,668</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">350</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">3,494</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">0</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">0</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">819</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">8,169</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">506,264</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">148,107</th>
+                  </tr>
+                
               
           
               
               
-                <tr>
-                  <th><b>Swahili (sw)</b></th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">1K</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">12K</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">2K</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">1.77</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">131K</th>
-                </tr>
+                
+                  <tr>
+                    <th><b>Indonesian (id)</b></th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">4,071</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">41,358</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">960</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">9,668</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">731</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">7,430</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">611</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">6,098</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">1,446,315</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">446,330</th>
+                  </tr>
+                
               
           
               
               
-                <tr>
-                  <th><b>Telugu (te)</b></th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">667</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">13K</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">819</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">1.23</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">518K</th>
-                </tr>
+                
+                  <tr>
+                    <th><b>Japanese (ja)</b></th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">3,477</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">34,387</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">860</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">8,354</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">650</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">6,922</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">1,141</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">11,410</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">6,953,614</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">1,133,444</th>
+                  </tr>
+                
               
           
               
               
-                <tr>
-                  <th><b>Thai (th)</b></th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">3K</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">31K</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">5K</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">1.75</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">542K</th>
-                </tr>
+                
+                  <tr>
+                    <th><b>Korean (ko)</b></th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">868</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">12,767</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">213</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">3,057</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">263</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">3,855</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">1,417</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">14,161</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">1,486,752</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">437,373</th>
+                  </tr>
+                
               
           
               
               
-                <tr>
-                  <th><b>Chinese (zh)</b></th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">2K</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">26K</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">6K</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">2.44</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">4M</th>
-                </tr>
+                
+                  <tr>
+                    <th><b>Russian (ru)</b></th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">4,683</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">33,921</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">1,252</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">13,100</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">911</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">8,777</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">718</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">7,174</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">9,543,918</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">1,476,045</th>
+                  </tr>
+                
               
           
               
               
-                <tr>
-                  <th><b>Total</b></th>
-                  <th><b>42K</b></th>
-                  <th><b>434K</b></th>
-                  <th><b>97K</b></th>
-                  <th><b>-</b></th>
-                  <th><b>105M</b></th>
-                </tr>
+                
+                  <tr>
+                    <th><b>Swahili (sw)</b></th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">1,901</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">9,359</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">482</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">5,092</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">638</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">6,615</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">465</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">4,620</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">131,924</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">47,793</th>
+                  </tr>
+                
+              
+          
+              
+              
+                
+                  <tr>
+                    <th><b>Telugu (te)</b></th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">3,452</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">18,608</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">828</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">1,606</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">594</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">5,948</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">793</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">7,920</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">518,079</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">66,353</th>
+                  </tr>
+                
+              
+          
+              
+              
+                
+                  <tr>
+                    <th><b>Thai (th)</b></th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">2,972</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">21,293</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">733</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">7,573</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">992</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">10,432</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">650</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">6,493</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">542,166</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">128,179</th>
+                  </tr>
+                
+              
+          
+              
+              
+                
+                  <tr>
+                    <th><b>Chinese (zh)</b></th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">1,312</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">13,113</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">393</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">3,928</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">0</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">0</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">920</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">9,196</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">4,934,368</th>
+                    <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">1,246,389</th>
+                  </tr>
+                
               
           
 </table>
 <p><i>
-	Descriptive statistics for 🌍🙌🌏 MIRACL. <b>Lang</b> denotes the language and ISO 639‑1 Code of the language; <b>Queries</b> denotes the number of queries; <b>Judgments</b> denotes the total number relevance judgments; <b>Positive Relevance</b> denotes the total number of positive relevance among <b>Judgments</b>, whereas <b>Avg Positive Relevance</b> is the average number of positive relevance per query; <b>Collection Size</b> denotes the number of passages in each language.
+	Descriptive statistics for 🌍🙌🌏 MIRACL. <b>Lang</b> denotes the language and ISO 639‑1 Code of the language; <b># Q</b> denotes the number of queries; <b># J</b> denotes the total number relevance judgments (including both positive and negative judgments); <b># Passages </b> denotes the number of passages in each language and <b> # Articles </b> denotes the number of Wikipedia articles in the same language.
 </i></p>
 <p><br /></p>
-<h3 class="blackpar_title" id="leaderboard">Challenge and Leaderboard</h3>
+<h2 class="blackpar_title" id="leaderboard">Challenge and Leaderboard</h2>
 <p>
-We propose two tracks for our challenge: <ol>
-    <li> <a class="nav-link " aria-current="page" href="https://eval.ai/" target="_blank">Known-Languages Retrieval</a>This track involves retrieving the top 10 passages per query for every query that appears in the known-languages list. The participants are informed of the language they will be judged on and will be granted access to the Training and Development data for known languages. The Test data will not be shared with the public in order to avoid bias and overfitting.</li> 
-    <li> <a class="nav-link " aria-current="page" href="https://eval.ai/" target="_blank">Surprise-Languages Retrieval</a>This track involves retrieving the top 10 passages for each query present in the surprise-language list. The participants will not be informed of the details of the language until two weeks before the submission deadline. The participants will not have access to any Training or Development data in order to maintain the secrecy of the surprise languages. This challenge aims to measure the robustness of a retriever model to generalize to unseen languages during training. The surprise languages will include both high-resource and low-resource languages.</li>
-</ol>
-</p>
-<p>
-For both tracks, participants are allowed to use any publicly available training data that does not contain the information from our development and test set. However, we expect to details on the nature of each training data.
+Our challenge follows a standard retrieval setup: test queries will be released (at different points in time for the two tasks), and participants will submit top-<i>k</i> results for each of the queries.
+These results will be primarily evaluated in terms of effectiveness (i.e., relevance of the responses).
+We will build a leaderboard that tracks the effectiveness of submissions.
+More details to follow!
 </p>
 <p><br /></p>
 <h3 class="blackpar_title" id="schedule">Schedule</h3>
@@ -390,20 +569,6 @@ For both tracks, participants are allowed to use any publicly available training
           
 </table>
 <p><br /></p>
-<h3 class="blackpar_title" id="evaluation">Evaluation</h3>
-<p>
-We evaluate the models presented in the challenge based on a combination of average retrieval accuracy across the test datasets for all languages and efficiency measured using model-size (i.e. complexity) and retrieval latency, similar to <a href="https://arxiv.org/abs/2104.14337">DynaBench (Kiela et al., 2021)</a>, where we provide an importance weight and finally provide a cumulative score. The validation set will be released so that the participants could reasonably evaluate their systems, but the overall test set will be kept confidential.
-</p>
-<p>
-<b>Effectiveness Evaluation:</b>
-We ask the participants to provide us a TREC run-file containing the top-k judgements. We will evaluate top k=10 retrieved passages for each query, consistent with prior challenges such as <a href="https://dl.acm.org/doi/abs/10.1145/3404835.3463249"> TREC-DL (Craswell et al., 2020)</a> or <a href="https://neuclir.github.io/">NeuCLIR</a>. Once the challenge ends, we would run an automatic evaluation for the submitted TREC run-files in the backend on our server on the hidden test queries and evaluate each participants model performance using nDCG@10 and rank-biased precision (RBP).
-</p>
-<p>
-<b>Efficiency Evaluation:</b> Participants would be required to open-source their final model implementations on <a href="https://huggingface.co/">HuggingFace hub</a>, a popular open-source platform for publicly hosting models. From the submitted model URL and brief report, we would estimate model complexity and index size. At inference, for a fair comparison of retrieval latency, each participant team would be required to provide easy and intuitive APIs to help us benchmark latencies using exact and exhaustive search similar to <a href="https://arxiv.org/abs/2104.08663">BEIR (Thakur et al., 2021)</a>. 
-</p>
-<p>
-We can precisely estimate how fast or slow a system is at inference in comparison to our baselines.
-</p>
 <h2 class="blackpar_title" id="organizers">Organizers</h2>
 <div class="row_perso">
     <p>
@@ -499,7 +664,7 @@ We can precisely estimate how fast or slow a system is at inference in compariso
 		
 			
 			<div class="card_perso column_perso">
-			  <img src="/images/Xiaoguang.png" alt="Xiaoguang Li" class="img_card_perso" />
+			  <img src="/images/Xiaoguang.jpg" alt="Xiaoguang Li" class="img_card_perso" />
 			  <div class="container_perso">
 				<center>
 				<h6>
@@ -599,12 +764,12 @@ We can precisely estimate how fast or slow a system is at inference in compariso
           
               
               
-                  <li class="p-name"><a href="https://huggingface.co/miraclproject-miracl" title="HuggingFace" target="_blank"><i class="fa fa-smile-o"></i>HuggingFace</a></li>
+                  <li class="p-name"><a href="https://huggingface.co/miracl" title="HuggingFace" target="_blank"><i class="fa fa-smile-o"></i>HuggingFace</a></li>
               
           
               
               
-                  <li class="p-name"><a href="https://www.twitter.com/project-miraclproject-miracl" title="Twitter" target="_blank"><i class="fa fa-twitter"></i>Twitter</a></li>
+                  <li class="p-name"><a href="https://twitter.com/project_miracl" title="Twitter" target="_blank"><i class="fa fa-twitter"></i>Twitter</a></li>
               
           
               
@@ -615,7 +780,7 @@ We can precisely estimate how fast or slow a system is at inference in compariso
         </ul>
       </div>
       <div class="footer-col">
-        <p>Large balanced multilingual benchmark for IR and DR tasks.</p>
+        <p>Multilingual Information Retrieval Across a Continuum of Languages</p>
       </div>
     </div>
 
