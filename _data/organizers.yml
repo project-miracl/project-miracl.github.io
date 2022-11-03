@@ -3,41 +3,32 @@
     - name: Xinyu Crystina Zhang
       affiliation: University of Waterloo
       photo: Crystina.png
-      link: https://crystina-z.github.io/
     - name: Nandan Thakur
       affiliation: University of Waterloo
       photo: Nandan.png
-      link: https://twitter.com/nandan__thakur
     - name: Odunayo Ogundepo
       affiliation: University of Waterloo
       photo: Odunayo.png
-      link: https://odunayoogundepo.com/
 - num_row: 1
   organizers:
     - name: David Alfonso-Hermelo
       affiliation: Huawei Noah's Ark Lab
       photo: David.png
-      link: https://www-ens.iro.umontreal.ca/~alfonsda/
     - name: Ehsan Kamalloo
       affiliation: Huawei Noah's Ark Lab
       photo: Ehsan.png
-      link: https://ehsk.github.io/
     - name: Xiaoguang Li
       affiliation: Huawei Noah's Ark Lab
       photo: Xiaoguang.jpg
-      link: https://scholar.google.com/citations?user=z3z3LCoAAAAJ&hl=zh-CN
 - num_row: 2
   organizers:    
     - name: Jimmy Lin
       affiliation: University of Waterloo
       photo: Jimmy.png
-      link: https://cs.uwaterloo.ca/~jimmylin/
     - name: Mehdi Rezagholizadeh
       affiliation: Huawei Noah's Ark Lab
       photo: Mehdi.png
-      link: https://twitter.com/mrgzadeh
     - name: Qun Liu
       affiliation: Huawei Noah's Ark Lab
       photo: Qun.png
-      link: https://liuquncn.github.io/index_en.html
       

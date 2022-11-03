@@ -1,13 +1,17 @@
 - title: 🏠 Home
   url: /index.html
-#- title: 📝 Paper
-#  url: /http://miracl.ai/
+- title: 📝 Paper
+  url: https://arxiv.org/abs/2210.09984
 - title: 🔭Overview
   url: /index.html#overview
 - title: 👥 Organizers
   url: /index.html#organizers
-#- title: 🏆 Leaderboard
-#  url: https://eval.ai/
+- title: 🤗 Datasets
+  url: https://huggingface.co/datasets/miracl/miracl
+- title: 🏆 Leaderboard
+  url: https://eval.ai/web/challenges/challenge-page/1881/overview
+- title: 📖 Documentation
+  url: https://github.com/project-miracl/miracl
 #- title: 📩 Submit
 #  url: https://eval.ai/
 #- title: ℹ FAQ
