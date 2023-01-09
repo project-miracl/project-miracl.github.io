@@ -47,7 +47,9 @@ The "surprise languages" task emphasizes the rapid development of language-speci
 
 <ul>
   <li>September 20, 2022: Initial announcement.</li>
-  <li>Oct 19, 2022: Release training and development set of known languages.</li>
+  <li>October 19, 2022: Release training and development set of known languages.</li>
+  <li>January 5, 2022: Release surprise languages.</li>
+  <li>January 5, 2022: Release test-b set of all languages. </li>
 </ul>
 <br>
 <h2 class="blackpar_title" id="data">Dataset Details</h2>
