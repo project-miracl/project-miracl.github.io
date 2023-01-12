@@ -129,8 +129,13 @@ More details to follow!
                 </tr>
               {% else %}
                 <tr>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">{{ st[key].date }}</th>
-                  <th style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">{{ st[key].event }}</th>
+                  <td style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">
+			{% if st[key].old_date %}
+			  <s>{{ st[key].old_date }}</s>&nbsp;
+			{% endif %}
+			{{ st[key].date }}
+		  </td>
+                  <td style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px">{{ st[key].event }}</td>
                 </tr>
               {% endif %}
           {% endfor %}
