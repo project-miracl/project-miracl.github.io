@@ -16,9 +16,11 @@ r3:
   event: 'Data release for “surprise” languages'
 
 r4:
-  date: 'Thu. Jan 12, 2023'
+  old_date: 'Thu. Jan 12, 2023'
+  date: 'Mon. Jan 16, 2023'
   event: 'Final submission deadline'
 
 r5:
-  date: 'Mon. Jan 16, 2023'
+  old_date: 'Mon. Jan 16, 2023'
+  date: 'Tue. Jan 17, 2023'
   event: 'Final winners announced'
