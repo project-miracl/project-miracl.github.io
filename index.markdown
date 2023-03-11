@@ -37,7 +37,7 @@ The "surprise languages" task emphasizes the rapid development of language-speci
 <h2 class="blackpar_title" id="connect">Connect with us!</h2>
 <ul>
 <li>📬 <a href="https://forms.gle/aCbjRQ9CPeXViWcaA">Mailing list</a></li> 
-<li> 💬 <a href="https://join.slack.com/t/miraclgroup/shared_invite/zt-1m0xcgpdh-Ibz0LftLvwdUQt94MeU6Bw">Slack Workspace</a></li> 
+<li> 💬 <a href="https://join.slack.com/t/miraclgroup/shared_invite/zt-1ph43qw40-gvoQI~jc_g2EPb_EgCF4Dg">Slack Workspace</a></li> 
 <li> 📣 <a href="https://twitter.com/project_miracl?s=21&t=Qf9LrVerhhN1hsXs1gdWhw">Twitter</a></li> 
 </ul>
 </p>
