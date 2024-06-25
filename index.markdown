@@ -55,7 +55,7 @@ The "surprise languages" task emphasizes the rapid development of language-speci
 <h2 class="blackpar_title" id="data">Dataset Details</h2>
 <p>
 The topics and judgment in training and development set are now released, as well as the corpora.
-Checkout our <a href="https://github.com/project-miracl/miracl">Github repository</a> and <a href="https://arxiv.org/abs/2210.09984">paper</a> for more details!
+Checkout our <a href="https://github.com/project-miracl/miracl">Github repository</a> and <a href="https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00595/117438/MIRACL-A-Multilingual-Retrieval-Dataset-Covering">paper</a> for more details!
 </p>
 
 <p>
